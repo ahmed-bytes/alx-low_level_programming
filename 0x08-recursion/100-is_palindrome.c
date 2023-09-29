@@ -28,7 +28,7 @@ int length_rec(char *s)
 	{
 		return (0);
 	}
-	
+
 	return (1 + length_rec(s + 1));
 }
 
