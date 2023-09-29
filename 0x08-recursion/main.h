@@ -10,4 +10,8 @@ int _sqrt_recursion(int n);
 int find_natural_sqrt(int a, int b);
 int is_prime_number(int n);
 int find_natural_prime(int a, int b);
+int is_palindrome(char *s);
+int length_rec(char *s);
+int string_palindrome(char *s, int i, int length);
+int wildcmp(char *s1, char *s2);
 #endif

@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * _sqrt_recursion - returns the natural square root of a number
- * @n: An Int arguement to find the square root
- * Returns: The result int
+ * _sqrt_recursion - checks if the int is a natural number
+ * @n: The argument int to square
+ * Return: returns the natural square rootof the number
  */
-
 int _sqrt_recursion(int n)
 {
 	if (n == 0)
@@ -16,11 +15,11 @@ int _sqrt_recursion(int n)
 
 
 /**
- * find_natural_sqrt - finds the natural sqare root
- * @a: An int arguement to result to y
- * @b: An int arguement that should be squared
+ * find_natural_sqrt - Finds the square root of the number recursively
+ * @a: An argument int that squares itself to get the output
+ * @b: The main argument int to find its square root
+ * Return: the square root value
  */
-
 int find_natural_sqrt(int a, int b)
 {
 	if (a * a > b)
