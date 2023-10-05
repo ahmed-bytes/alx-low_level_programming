@@ -9,7 +9,7 @@
 char *_strdup(char *str)
 {
 	char *string_cpy;
-	int i, check, size;
+	int i, check, size = 0;
 
 	if (str == NULL)
 	{
@@ -18,7 +18,7 @@ char *_strdup(char *str)
 
 	for (check = 0; str[check] != '\0'; check++)
 	{
-		size = check;
+		size++;
 	}
 
 	string_cpy = malloc((size + 1) * sizeof(char));
