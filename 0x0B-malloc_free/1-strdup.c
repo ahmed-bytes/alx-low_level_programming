@@ -16,7 +16,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (check = 0; str[check] != 0; check++)
+	for (check = 0; str[check] != '\0'; check++)
 	{
 		size = check;
 	}
