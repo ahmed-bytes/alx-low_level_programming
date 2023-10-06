@@ -11,7 +11,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *joint_string;
-	int i, j, length;
+	int i, j;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -23,9 +23,8 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	while (s2[j] != '\0')
 		j++;
-	length = i + j + 1;
 
-	joint_string = malloc(length * sizeof(char));
+	joint_string = malloc((i + j + 1) * sizeof(char));
 	if (joint_string == NULL)
 		return (NULL);
 
@@ -42,6 +41,6 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	}
 
-	joint_string[length] = '\0';
+	joint_string[i] = '\0';
 	return (joint_string);
 }
