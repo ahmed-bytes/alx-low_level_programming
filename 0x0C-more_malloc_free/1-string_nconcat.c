@@ -11,10 +11,9 @@ int my_strlen(char *ss)
 {
 	int i;
 
-	for (i = 0; ss != '\0'; i++)
-	{
-		return (i);
-	}
+	for (i = 0; ss[i] != '\0'; i++)
+		;
+	return (i);
 }
 
 
@@ -29,24 +28,21 @@ int my_strlen(char *ss)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p;
-	unsigned int total_length, i, j, n_copy;
-
-	n_copy = n;
+	int total_length, i, j, n_copy = n;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	if (n_copy < 0)
-		return (NULL);
+
 	if (n_copy >= my_strlen(s2))
 	{
 		n_copy = my_strlen(s2);
 	}
 
-	total_len = my_strlen(s1) + n_copy + 1;
+	total_length = my_strlen(s1) + n_copy + 1;
 
-	p = malloc(sizeof(char) * total_len);
+	p = malloc(sizeof(char) * total_length);
 	if (p == NULL)
 	{
 		return (NULL);
