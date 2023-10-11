@@ -76,7 +76,7 @@ char *my_strcpy(char *_from, char *_to)
 	{
 		_to[i] = _from[i];
 	}
-	_to[length] = '\0';
+	_to[i] = '\0';
 
 	return (_to);
 }
