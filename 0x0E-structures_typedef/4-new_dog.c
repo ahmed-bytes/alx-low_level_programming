@@ -24,7 +24,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(cute_dog);
 		return (NULL);
 	}
-	cute_dog->owner = malloc(sizeof(char)* (length2 + 1));
+	cute_dog->owner = malloc(sizeof(char) * (length2 + 1));
 	if (cute_dog->owner == NULL)
 	{
 		free(cute_dog);
@@ -41,7 +41,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 /**
  * my_strlen - The length of the string
- * @s: string get length
+ * @c: string get length
  * Return: The number
  */
 int my_strlen(char *c)
@@ -59,22 +59,23 @@ int my_strlen(char *c)
 
 /**
  * my_strcpy - copy sting
- * @s_from: string parameter to copy from
- * @s_to: string parameter to copy to
+ * @_from: string parameter to copy from
+ * @_to: string parameter to copy to
+ * Return: The copied string
  */
-char *my_strcpy(char *s_from, char *s_to)
+char *my_strcpy(char *_from, char *_to)
 {
 	int i, j, length = 0;
 
-	for (i = 0; s_from[i] != '\0'; i++)
+	for (i = 0; _from[i] != '\0'; i++)
 	{
 		length++;
 	}
 	for (j = 0; j < length; j++)
 	{
-		s_to[j] = s_from[j];
+		_to[j] = _from[j];
 	}
-	s_to[j] = '\0';
+	_to[j] = '\0';
 
-	return (s_to);
+	return (_to);
 }
