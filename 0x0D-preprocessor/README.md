@@ -1,2 +1,2 @@
-# C - Structures, typedef
+# C - PREPROCESSOR
 ##  By: Julien Barbier
