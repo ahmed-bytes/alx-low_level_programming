@@ -65,17 +65,18 @@ int my_strlen(char *c)
  */
 char *my_strcpy(char *_from, char *_to)
 {
-	int i, j, length = 0;
+	int i, length;
 
-	for (i = 0; _from[i] != '\0'; i++)
+	length = 0;
+	while (_from[length] != '\0')
 	{
 		length++;
 	}
-	for (j = 0; j < length; j++)
+	for (i = 0; i < length; i++)
 	{
-		_to[j] = _from[j];
+		_to[i] = _from[i];
 	}
-	_to[j] = '\0';
+	_to[length] = '\0';
 
 	return (_to);
 }
