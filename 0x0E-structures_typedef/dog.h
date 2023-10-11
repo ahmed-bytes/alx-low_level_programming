@@ -6,16 +6,21 @@
  * @age: doggy's age
  * @owner: The doggy's lucky owner
  */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-}
-dog;
+};
+/**
+ * dog_t - typedef for struct dog
+ */
+typedef struct dog dog_t;
 #include <stdio.h>
 #include <stdlib.h>
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-typedef struct dog dog_t;
+char *my_strcpy(char *s_from, char *s_to);
+int my_strlen(char *s);
+dog_t *new_dog(char *name, float age, char *owner);
 #endif
