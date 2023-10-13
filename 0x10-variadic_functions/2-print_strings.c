@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 /**
  * print_strings - Prints strings
- * @seperator: The String to be printed between string
+ * @separator: String to be printed between string
  * @n: size of the strings passed to the function
  */
 
@@ -26,4 +26,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 	}
 	printf("\n");
+	va_end(ptr);
 }
