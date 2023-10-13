@@ -1,6 +1,6 @@
 #include "3-calc.h"
 /**
- * main - 
+ * main - A simple calculator
  * @argc: number of arguments
  * @argv: array of arguements
  * Return: Always 0 means Success
